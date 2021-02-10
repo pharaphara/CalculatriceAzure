@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.formation.projet</groupId>
+	<artifactId>Calculatrice</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>Back</module>
+		<module>Front</module>
+	</modules>
+	<distributionManagement>
+		<repository>
+		<id>nexus</id>
+		<name>Nexus Realeases</name>
+		<url>http://localhost:8081/repository/maven-releases</url>
+		</repository>
+		<snapshotRepository>
+		<id>nexus</id>
+		<name>Nexus SnapShot</name>
+		<url>http://localhost:8081/repository/maven-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+</project>
